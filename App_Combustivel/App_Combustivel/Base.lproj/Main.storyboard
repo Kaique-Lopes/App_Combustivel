@@ -49,11 +49,18 @@
                                 <rect key="frame" x="179" y="353" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="calculatePrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4t-Bq-gmz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.58039215686274503" green="0.74117647058823533" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="tfAlcool" destination="CAq-vg-WtI" id="jKe-wg-maA"/>
+                        <outlet property="tfGasoline" destination="c8b-aI-0Dn" id="MRh-QI-tmZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
