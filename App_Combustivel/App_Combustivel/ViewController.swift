@@ -34,7 +34,12 @@ class ViewController: UIViewController {
     func bestPrice(alcool: String, gasolina: String) {
         if let valueAlcool = Double(alcool){
             if let valueGasolina = Double(gasolina) {
-                
+                let resultPrice = valueAlcool / valueGasolina
+                if resultPrice >= 0.7 {
+                    self.lbResult.text = "Utilize Gasolina"
+                }else {
+                    self.lbResult.text = "Utilize Alcool"
+                }
             }
         }
     }
