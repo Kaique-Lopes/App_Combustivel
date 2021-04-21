@@ -14,18 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func calculatePrice(_ sender: Any) {
         if let alcool = tfAlcool.text {
             if let gasolina = tfGasoline.text {
                 
-               let result = self.validateValue(alcool: alcool, gasolina: gasolina)
+                let result = self.validateValue(alcool: alcool, gasolina: gasolina)
                 if result {
                     
                 }else {
-                    
+                    lbResult.text = "Digite os preços para Calcular"
                 }
             }
         }
@@ -33,14 +33,12 @@ class ViewController: UIViewController {
     }
     func validateValue(alcool: String, gasolina: String) -> Bool {
         var validate = true
-
+        
         if alcool.isEmpty {
             validate = false
         }else if gasolina.isEmpty{
             validate = false
+        }
         return validate
     }
-
-}
-
 }
