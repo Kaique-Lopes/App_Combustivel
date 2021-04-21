@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                 
                 let result = self.validateValue(alcool: alcool, gasolina: gasolina)
                 if result {
-                    
+                    self.bestPrice(alcool: alcool, gasolina: gasolina)
                 }else {
                     lbResult.text = "Digite os preços para Calcular"
                 }
@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         }
         
     }
+    func bestPrice(alcool: String, gasolina: String) {
+        
+    }
+    
     func validateValue(alcool: String, gasolina: String) -> Bool {
         var validate = true
         
