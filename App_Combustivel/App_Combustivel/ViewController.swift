@@ -32,7 +32,11 @@ class ViewController: UIViewController {
         
     }
     func bestPrice(alcool: String, gasolina: String) {
-        
+        if let valueAlcool = Double(alcool){
+            if let valueGasolina = Double(gasolina) {
+                
+            }
+        }
     }
     
     func validateValue(alcool: String, gasolina: String) -> Bool {
