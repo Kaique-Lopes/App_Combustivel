@@ -10,14 +10,37 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tfAlcool: UITextField!
     @IBOutlet weak var tfGasoline: UITextField!
+    @IBOutlet weak var lbResult: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func calculatePrice(_ sender: Any) {
+
     }
     
+    @IBAction func calculatePrice(_ sender: Any) {
+        if let alcool = tfAlcool.text {
+            if let gasolina = tfGasoline.text {
+                
+               let result = self.validateValue(alcool: alcool, gasolina: gasolina)
+                if result {
+                    
+                }else {
+                    
+                }
+            }
+        }
+        
+    }
+    func validateValue(alcool: String, gasolina: String) -> Bool {
+        var validate = true
+
+        if alcool.isEmpty {
+            validate = false
+        }else if gasolina.isEmpty{
+            validate = false
+        return validate
+    }
 
 }
 
+}
